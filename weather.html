@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text " id="city-input" placeholder="Search for any city...">
+            <button onclick="getWeather()">Search</button>
+
+        </div>
+        <div class="error" id="error"></div>
+        <div class="loading" id="loading">Featching Weather data...</div>
+<div class="weather-info" id="weather-info" style="display: none;">
+    <div class="current-weather">
+        <div>
+            <h1 class="city-name" id="city-name">City Name</h1>
+            <p class="date" id="date">Date</p>
+            <p class="weather-description" id="weather-description">Weather Description</p>
+        </div>
+        <div>
+            <span class="temperature" id="temperature">0℃</span>
+            <img src="#" alt="" id="weather-icon" class="weather-icon">
+        </div>
+    </div>
+    <div class="weather-details">
+        <div class="detail-box">
+            <h3>Feels Likes</h3>
+            <p id="feels-like">0℃</p>
+        </div>
+        <div class="detail-box">
+            <h3>Humidity</h3>
+            <p id="humidity">0%</p>
+        </div>
+            <div class="detail-box">
+            <h3>Wind Speed</h3>
+            <p id="wind-speed">0 km/h</p>
+        </div>
+            <div class="detail-box">
+            <h3>UV Index</h3>
+            <p id="uv-index">0%</p>
+        </div>
+    </div>
+    <h2 class="section-title">Forcast</h2>
+    <div class="forecast" id="forecast"></div>
+</div>        
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
